@@ -12,7 +12,13 @@
 </head>
 <body>
     <div class="app">
-        
+        <h2>Disks</h2>
+        <ul>
+            <li v-for="disco in database">
+                <img :src="disco.poster" alt="">
+                {{disco.title} {{disco.author}} {{disco.genre}} {{disco.year}}
+            </li>
+        </ul>
     </div>
 </body>
 </html>
